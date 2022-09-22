@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 38% 1fr;
   max-width: 45rem;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(210, 46%, 95%);
   border-radius: 0.625rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0rem 0.5rem 1.5rem;
 
@@ -59,7 +59,7 @@
         transition: 0.3s ease;
 
         svg {
-          fill: #6e8098;
+          fill: hsl(214, 17%, 51%);
         }
 
         &:hover,
@@ -68,7 +68,7 @@
           background-color: hsl(214, 17%, 51%);
 
           svg {
-            fill: hsl(0, 0%, 100%) !important;
+            fill: hsl(210, 46%, 95%) !important;
           }
         }
       }
@@ -94,7 +94,7 @@
           bottom: -0.625rem;
           border-left: 1.25rem solid transparent;
           border-right: 1.25rem solid transparent;
-          border-top: 1.25rem solid #48556a;
+          border-top: 1.25rem solid hsl(217, 19%, 35%);
         }
 
         &.show {
@@ -114,7 +114,7 @@
           padding: 0 0.5rem;
 
           svg {
-            fill: hsl(0, 0%, 100%);
+            fill: hsl(210, 46%, 95%);
             font-size: 1.125rem;
             vertical-align: middle;
           }
@@ -125,6 +125,54 @@
           }
         }
       }
+    }
+  }
+}
+
+footer {
+  .attribution {
+    display: block;
+    position: fixed;
+    right: 1rem;
+    background-image: url('../../assets/images/faha1999.webp');
+    background-size: 100%;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    z-index: 99;
+    padding: 1rem;
+    border: 0.0625rem solid hsl(233, 11%, 84%);
+    bottom: 1rem;
+
+    p {
+      visibility: hidden;
+      position: fixed;
+      bottom: 1rem;
+      right: 5rem;
+      width: 12.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0 1rem;
+      font-size: 0.6rem;
+      text-align: left;
+      letter-spacing: 0.2rem;
+      z-index: 999;
+      box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.5);
+      transition: 0.8s cubic-bezier(0.06, 0.8, 0.1, 1);
+      line-height: 1rem;
+
+      a {
+        color: hsl(217, 19%, 35%);
+        font-size: 700;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &:hover p {
+      visibility: visible;
+      background: hsl(210, 46%, 95%);
     }
   }
 }
@@ -170,7 +218,7 @@
           pointer-events: none;
 
           svg {
-            fill: hsl(0, 0%, 100%);
+            fill: hsl(210, 46%, 95%);
           }
         }
 
